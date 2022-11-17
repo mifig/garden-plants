@@ -1,0 +1,6 @@
+<h1>Add new tag for <%= @plant.name %></h1>
+
+<%= simple_form_for [@plant, @plant_tag] do |f| %>
+  <%= f.association :tag %>
+  <%= f.submit %>
+<% end %>
